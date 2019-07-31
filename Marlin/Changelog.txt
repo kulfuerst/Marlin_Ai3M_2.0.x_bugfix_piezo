@@ -1,0 +1,4 @@
+20190523: Added piezo probe compatibility
+20190729: Increased max m888 cooldown temperature to 50°C
+20190730: Increased max temp to 315°C / Set new hotend PID to kP=16.85, kI=0.95, kD=71.72
+20190731: Added untested M600 support
