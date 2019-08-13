@@ -30,6 +30,57 @@
 
 #define LARGE_FLASH        true
 
+// TMC2208
+#if HAS_DRIVER(TMC2208)
+  /**
+   * TMC2208 stepper drivers
+   *
+   * Hardware serial communication ports.
+   * If undefined software serial is used according to the pins below
+   */
+  //#define X_HARDWARE_SERIAL  Serial1
+  //#define X2_HARDWARE_SERIAL Serial1
+  //#define Y_HARDWARE_SERIAL  Serial1
+  //#define Y2_HARDWARE_SERIAL Serial1
+  //#define Z_HARDWARE_SERIAL  Serial1
+  //#define Z2_HARDWARE_SERIAL Serial1
+  //#define E0_HARDWARE_SERIAL Serial1
+  //#define E1_HARDWARE_SERIAL Serial1
+  //#define E2_HARDWARE_SERIAL Serial1
+  //#define E3_HARDWARE_SERIAL Serial1
+  //#define E4_HARDWARE_SERIAL Serial1
+
+  //
+  // Software serial
+  //
+
+  #define X_SERIAL_TX_PIN    11
+  #define X_SERIAL_RX_PIN    -1
+  #define X2_SERIAL_TX_PIN   -1
+  #define X2_SERIAL_RX_PIN   -1
+ 
+  #define Y_SERIAL_TX_PIN    52
+  #define Y_SERIAL_RX_PIN    -1
+  #define Y2_SERIAL_TX_PIN   -1
+  #define Y2_SERIAL_RX_PIN   -1
+ 
+  #define Z_SERIAL_TX_PIN    20
+  #define Z_SERIAL_RX_PIN    -1
+  #define Z2_SERIAL_TX_PIN   20
+  #define Z2_SERIAL_RX_PIN   -1
+ 
+  #define E0_SERIAL_TX_PIN   21
+  #define E0_SERIAL_RX_PIN   -1
+  #define E1_SERIAL_TX_PIN   -1
+  #define E1_SERIAL_RX_PIN   -1
+  #define E2_SERIAL_TX_PIN   -1
+  #define E2_SERIAL_RX_PIN   -1
+  #define E3_SERIAL_TX_PIN   -1
+  #define E3_SERIAL_RX_PIN   -1
+  #define E4_SERIAL_TX_PIN   -1
+  #define E4_SERIAL_RX_PIN   -1
+#endif
+
 // Misc PINs
 #define BUZZER 			   31
 #define SDPOWER            -1
